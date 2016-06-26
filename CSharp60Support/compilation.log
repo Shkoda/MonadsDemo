@@ -1,5 +1,5 @@
 ********************************************************************************
-*                      Sunday, June 26, 2016 11:36:11 PM                       *
+*                       Monday, June 27, 2016 1:12:01 AM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 1.8.1.0
 Platform: Windows
@@ -11,9 +11,9 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: G:\UnityWorkspace\MonadsDemo\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-c450ed8ffc1232d428f3c2adffeb3205
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-c67eecabbbb99c441a9fc104ce3982a7
 Exit code: 0
-Elapsed time: 0.38 sec
+Elapsed time: 0.37 sec
 
 - Compiler output (0 lines):
 

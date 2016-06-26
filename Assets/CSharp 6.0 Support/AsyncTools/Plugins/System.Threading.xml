@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <doc>
     <assembly>
         <name>System.Threading</name>
@@ -14426,7 +14426,7 @@
             The query was canceled.
             </exception>
         </member>
-        <member name="M:System.Linq.ParallelEnumerable.Where``1(System.Linq.ParallelQuery{``0},System.Func{``0,System.Boolean})">
+        <member name="M:System.Linq.ParallelEnumerable.WhereExt``1(System.Linq.ParallelQuery{``0},System.Func{``0,System.Boolean})">
             <summary>
             Filters in parallel a sequence of values based on a predicate.
             </summary>
@@ -14439,7 +14439,7 @@
             <paramref name="source"/> or <paramref name="predicate"/> is a null reference (Nothing in Visual Basic).
             </exception>
         </member>
-        <member name="M:System.Linq.ParallelEnumerable.Where``1(System.Linq.ParallelQuery{``0},System.Func{``0,System.Int32,System.Boolean})">
+        <member name="M:System.Linq.ParallelEnumerable.WhereExt``1(System.Linq.ParallelQuery{``0},System.Func{``0,System.Int32,System.Boolean})">
             <summary>
             Filters in parallel a sequence of values based on a predicate. Each element's index is used in the logic of the predicate function.
             </summary>
@@ -18720,7 +18720,7 @@
                  This class implements ParallelQuery so that any parallel query operator
                  can bind to the parallel query provider overloads. This allows us to string
                  together operators w/out the user always specifying AsParallel, e.g.
-                 Select(Where(..., ...), ...), and so forth. 
+                 Select(WhereExt(..., ...), ...), and so forth. 
              </summary>
              <typeparam name="TOutput"></typeparam>
         </member>
@@ -19280,9 +19280,9 @@
              <typeparam name="TInput"></typeparam>
              <typeparam name="TOutput"></typeparam>
         </member>
-        <member name="T:System.Linq.Parallel.IndexedWhereQueryOperator`1">
+        <member name="T:System.Linq.Parallel.IndexedWhereExtQueryOperator`1">
              <summary>
-             A variant of the Where operator that supplies element index while performing the
+             A variant of the WhereExt operator that supplies element index while performing the
              filtering operation. This requires cooperation with partitioning and merging to
              guarantee ordering is preserved.
             
@@ -19430,9 +19430,9 @@
             Determines the order index state for the output operator
             </summary>
         </member>
-        <member name="T:System.Linq.Parallel.WhereQueryOperator`1">
+        <member name="T:System.Linq.Parallel.WhereExtQueryOperator`1">
             <summary>
-            The operator type for Where statements. This operator filters out elements that
+            The operator type for WhereExt statements. This operator filters out elements that
             don't match a filter function (supplied at instantiation time). 
             </summary>
             <typeparam name="TInputOutput"></typeparam>
