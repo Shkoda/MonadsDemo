@@ -92,6 +92,41 @@ public struct ValueOrError<T>
         return ApplySpecialFunction<R>(unwrapped => ValueOrError<R>.FromValue(function(unwrapped)));
     }
 
- 
+    public ValueOrError<R> ContinueWith<R>(Func<ValueOrError<R>> func)
+    {
+        Func<T, ValueOrError<R>> extendedFunction  = x => func();
+        return ApplySpecialFunction<R>(unwrapped => extendedFunction(unwrapped));
+   
+    }
 
+    public ValueOrError<R> ContinueWith<R>(Func<ValueOrError<T>, ValueOrError<R>> func)
+    {
+        var tmp = this;
+        Func<T, ValueOrError<R>> extendedFunction = x => func(tmp);
+        return ApplySpecialFunction<R>(unwrapped => extendedFunction(unwrapped));
+    }
+
+    public ValueOrError<R> ContinueWith<R>(Func<T, ValueOrError<R>> func)
+    {
+        return ApplySpecialFunction<R>(unwrapped => func(unwrapped));
+    }
+
+    public ValueOrError<R> ContinueWith<R>(Func<T, R> func)
+    {
+        Func<T, ValueOrError<R>> extendedFunction = x =>
+        {
+            try
+            {
+                return ValueOrError<R>.FromValue(func(x));
+            }
+            catch (Exception e)
+            {
+
+                return ValueOrError<R>.FromError(e.Message);
+            }
+   
+        };
+
+        return ApplySpecialFunction<R>(unwrapped => extendedFunction(unwrapped));
+    }
 }
