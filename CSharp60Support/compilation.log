@@ -1,0 +1,30 @@
+********************************************************************************
+*                      Sunday, June 26, 2016 11:36:11 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 1.8.1.0
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: G:\UnityWorkspace\MonadsDemo
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: G:\UnityWorkspace\MonadsDemo\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-c450ed8ffc1232d428f3c2adffeb3205
+Exit code: 0
+Elapsed time: 0.38 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (1 line):
+0: Assets\Scripts\OnDemand.cs(15,42): warning CS0693: Type parameter 'T' has the same name as the type parameter from outer type 'OnDemand<T>'
+
+- PDB to MDB conversion --------------------------------------
+
+Process: G:\UnityWorkspace\MonadsDemo\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.03 sec
+
+- pdb2mdb.exe output (0 lines):
