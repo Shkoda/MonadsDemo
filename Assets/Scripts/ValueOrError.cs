@@ -128,5 +128,6 @@ public struct ValueOrError<T>
         };
 
         return ApplySpecialFunction<R>(unwrapped => extendedFunction(unwrapped));
+
     }
 }
